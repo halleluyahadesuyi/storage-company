@@ -1,10 +1,19 @@
+import { useState } from 'react';
+import { Navbar } from './components/Navbar'
+import { Home } from './components/Home';
 import './App.css'
 
 function App() {
+  // const [isNavOpen, setIsNavOpen] = useState(false);
+
+  // const toggleNavbar = () => {
+  //   setIsNavOpen(!isNavOpen);
+  // };
 
   return (
     <>
-      <h1>Yayyy!</h1>
+      <Home />
+      {/* <Navbar toggleNavbar={toggleNavbar} /> */}
     </>
   )
 }
