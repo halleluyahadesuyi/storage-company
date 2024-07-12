@@ -38,7 +38,7 @@ export function Navbar({ toggleNavbar }) {
         <button>
           Get a quote
           {/* <img src={arrow} alt="arrow-right" /> */}
-          <FaArrowRight style={{ paddingLeft: "12px", }} />
+          <FaArrowRight style={{ padding: "0 2px 0 12px", transform: 'scaleX(1.4)' }} />
         </button>
       </div>
       <a
