@@ -1,11 +1,26 @@
 .ratings {
-  padding: 20px;
+  padding: 80px 65px 120px 70px;
   background: #faf8f5;
+  color: #285581;
+  font-family: "Inter", sans-serif;
+  text-align: left;
 }
 
 .introSection {
-  text-align: center;
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* gap: 20px; */
+  /* text-align: left; */
+  /* margin-bottom: 24px; */
+  font-size: 40px;
+  /* margin: 0 90px 24px 0; */
+  /* width: 70%; */
+}
+
+.introSection h2 {
+  /* font-size: 40px; */
+  /* padding: 0 90px 24px 0;
+  width: 70%; */
 }
 
 .highlight {
@@ -13,14 +28,17 @@
 }
 
 .note {
-  color: #888;
-  font-size: 12px;
+  color: #285581;
+  font-size: 24px;
 }
 
 .introImage {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 20px; */
+  /* width: 30%; */
+  width: 361px;
+  height: 241px;
 }
 
 .introImage img {
@@ -29,10 +47,12 @@
 }
 
 .reviewsSection {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 16px;
   margin-bottom: 40px;
+  padding: 62px 0 0 56px;
 }
 
 .reviewCard {
@@ -43,11 +63,10 @@
 }
 
 .ratingSection {
-  text-align: center;
-  font-size: 16px;
+  /* text-align: center; */
+  font-size: 24px;
 }
 
 .ratingSection a {
-  color: #007bff;
-  text-decoration: none;
+  color: #197FE5;
 }
