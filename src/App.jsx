@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar'
 import { Home } from './components/Home';
+import { Ratings } from './components/Ratings';
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
       <Home />
       {/* <Navbar toggleNavbar={toggleNavbar} /> */}
+      <Ratings />
     </>
   )
 }

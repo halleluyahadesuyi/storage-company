@@ -1,35 +1,24 @@
-import styles from "../css/Locations.module.css";
-import search from "../assets/imgs/search.png";
+import styles from "../css/Ratings.module.css";
+import team from "../assets/imgs/team.png";
 
-export function Locations() {
-  const towns = [
-    "Morecambe",
-    "Durham",
-    "Penrith",
-    "Killingworth",
-    "Brunswick",
-    "Byker",
-    "Morpeth",
-    "Washington",
-  ];
-
-  return (
-    <section  className={styles.locations}>
-      <header className={styles.searchSection}>
-        <h1>Search our locations</h1>
-        <div className={styles.searchBar}>
-          <input type="text" placeholder="Search locations by postcode" />
-          <button>Search <img src={search} alt="search icon" className={styles.searchLens} style={{ marginLeft: "12px", width: "16px", height: "16px" }} /></button>
-        </div>
-        <p>Or find by town</p>
-        <div className={styles.townButtons}>
-          {towns.map((town) => (
-            <button key={town}>{town} ➔</button>
-          ))}
-        </div>
-      </header>
-
-      {/* <section className={styles.introSection}>
+export function Ratings() {
+    return (
+        <div className={styles.ratings}>
+          {/* <header className={styles.searchSection}>
+            <h1>Search our locations</h1>
+            <div className={styles.searchBar}>
+              <input type="text" placeholder="Search locations by postcode" />
+              <button>Search 🔍</button>
+            </div>
+            <p>Or find by town</p>
+            <div className={styles.townButtons}>
+              {["Morecambe", "Durham", "Penrith", "Killingworth", "Brunswick", "Byker", "Morpeth", "Washington"].map((town) => (
+                <button key={town}>{town} ➔</button>
+              ))}
+            </div>
+          </header> */}
+    
+          <section className={styles.introSection}>
             <h2>
               We’re a <span className={styles.highlight}>family-run</span> North East self
               storage company that’s rated <span className={styles.highlight}>5 stars</span> by our loyal customers
@@ -65,7 +54,7 @@ export function Locations() {
             <p>
               <strong>4.96</strong> average rating across <strong>167</strong> reviews <a href="/">See all reviews</a>
             </p>
-          </footer> */}
-    </section>
-  );
+          </footer>
+        </div>
+      );
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "./Navbar";
+import { Locations } from "./Locations";
 import styles from "../css/Home.module.css";
 import city from "../assets/imgs/city.png";
 import { FaArrowRight } from "react-icons/fa";
@@ -13,22 +14,26 @@ export function Home() {
   };
 
   return (
-    <div className={styles.gradientBackground}>
-      <Navbar toggleNavbar={toggleNavbar} />
-      <h1>
-        Self Storage <br />
-        Newcastle & the North East
-      </h1>
-      {/* <button className={styles.gradientButton}>
+    <>
+      <div className={styles.gradientBackground}>
+        <Navbar toggleNavbar={toggleNavbar} />
+        <h1>
+          Self Storage <br />
+          Newcastle & the North East
+        </h1>
+        {/* <button className={styles.gradientButton}>
         Get a quote <img src={arrow} alt="arrow-right" />
       </button> */}
-      <button className={styles.gradientButton}>
-        Get a quote
-        <FaArrowRight
-          style={{ padding: "0 2px 0 12px", transform: "scaleX(1.4)" }}
-        />
-      </button>
-      <img src={city} alt="city" className={styles.city} />
-    </div>
+        <button className={styles.gradientButton}>
+          Get a quote
+          <FaArrowRight
+            style={{ padding: "0 2px 0 12px", transform: "scaleX(1.4)" }}
+          />
+        </button>
+        <img src={city} alt="city" className={styles.city} />
+      </div>
+
+      <Locations />
+    </>
   );
 }

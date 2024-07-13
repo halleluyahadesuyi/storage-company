@@ -1,0 +1,68 @@
+.locations {
+  /* padding: 20px 0; */
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+  background: #faf8f5;
+  color: #285581;
+}
+
+.searchSection {
+  text-align: center;
+  width: 90%;
+  background: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchBar input {
+  padding: 10px;
+  margin-right: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 85%;
+  background: #f4f6f9;
+}
+
+.searchBar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 15%;
+  padding: 20px;
+  font-size: 16px;
+  /* border: 1px solid #007bff; */
+  border: none;
+  background-color: #4176aa;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.searchBar .searchLens {
+  transform: scaleX(-1);
+}
+
+.townButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.townButtons button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+}
