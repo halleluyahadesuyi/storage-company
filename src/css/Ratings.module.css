@@ -9,18 +9,7 @@
 .introSection {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  /* gap: 20px; */
-  /* text-align: left; */
-  /* margin-bottom: 24px; */
   font-size: 40px;
-  /* margin: 0 90px 24px 0; */
-  /* width: 70%; */
-}
-
-.introSection h2 {
-  /* font-size: 40px; */
-  /* padding: 0 90px 24px 0;
-  width: 70%; */
 }
 
 .highlight {
@@ -33,10 +22,6 @@
 }
 
 .introImage {
-  /* display: flex;
-  justify-content: center;
-  margin-top: 20px; */
-  /* width: 30%; */
   width: 361px;
   height: 241px;
 }
@@ -63,10 +48,9 @@
 }
 
 .ratingSection {
-  /* text-align: center; */
   font-size: 24px;
 }
 
 .ratingSection a {
-  color: #197FE5;
+  color: #197fe5;
 }

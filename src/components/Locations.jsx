@@ -1,7 +1,9 @@
 import styles from "../css/Locations.module.css";
 import search from "../assets/imgs/search.png";
 
+// Define the Locations component as a named export
 export function Locations() {
+  // Array of town names to be displayed as buttons
   const towns = [
     "Morecambe",
     "Durham",
@@ -13,59 +15,38 @@ export function Locations() {
     "Washington",
   ];
 
+  // Render the component
   return (
-    <section  className={styles.locations}>
+    <section className={styles.locations}>
       <header className={styles.searchSection}>
+        {/* Main heading for the search section */}
         <h1>Search our locations</h1>
+
+        {/* Search bar with input field and search button */}
         <div className={styles.searchBar}>
           <input type="text" placeholder="Search locations by postcode" />
-          <button>Search <img src={search} alt="search icon" className={styles.searchLens} style={{ marginLeft: "12px", width: "16px", height: "16px" }} /></button>
+          <button>
+            Search
+            <img
+              src={search}
+              alt="search icon"
+              className={styles.searchLens}
+              style={{ marginLeft: "12px", width: "16px", height: "16px" }}
+            />
+          </button>
         </div>
+
+        {/* Subheading for finding locations by town */}
         <p>Or find by town</p>
+
+        {/* Container for town buttons */}
         <div className={styles.townButtons}>
+          {/* Map over the towns array to create a button for each town */}
           {towns.map((town) => (
             <button key={town}>{town} ➔</button>
           ))}
         </div>
       </header>
-
-      {/* <section className={styles.introSection}>
-            <h2>
-              We’re a <span className={styles.highlight}>family-run</span> North East self
-              storage company that’s rated <span className={styles.highlight}>5 stars</span> by our loyal customers
-            </h2>
-            <p className={styles.note}>* Without the High Prices of National Chains</p>
-            <div className={styles.introImage}>
-              <img src={team} alt="Company team" />
-            </div>
-          </section>
-    
-          <section className={styles.reviewsSection}>
-              <div className={styles.reviewCard}>
-              <h3>Susie ⭐⭐⭐⭐⭐</h3>
-              <p>
-                Friendly and helpful team and super easy service. Price was the best I could find and no set periods of use, which was exactly what we needed. Would absolutely recommend and use again.
-              </p>
-            </div>
-            <div className={styles.reviewCard}>
-              <h3>Chris Wandless ⭐⭐⭐⭐⭐</h3>
-              <p>
-                All staff I have dealt with have been friendly and helpful. Staff both on site and on the telephone have been polite, courteous and helpful. Excellent customer service throughout.
-              </p>
-            </div>
-            <div className={styles.reviewCard}>
-              <h3>Michael Goble ⭐⭐⭐⭐⭐</h3>
-              <p>
-                Thoroughly recommend this storage company, containers are excellent and value for money, easy access 24/7... and Sarah and Andrew were always so pleasant to deal with.
-              </p>
-            </div>
-          </section>
-    
-          <footer className={styles.ratingSection}>
-            <p>
-              <strong>4.96</strong> average rating across <strong>167</strong> reviews <a href="/">See all reviews</a>
-            </p>
-          </footer> */}
     </section>
   );
 }

@@ -1,25 +1,15 @@
 import styles from "../css/Ratings.module.css";
 import team from "../assets/imgs/team.png";
 
+// Define the Ratings component as a named export
 export function Ratings() {
+  // Render the component
   return (
     <div className={styles.ratings}>
-      {/* <header className={styles.searchSection}>
-            <h1>Search our locations</h1>
-            <div className={styles.searchBar}>
-              <input type="text" placeholder="Search locations by postcode" />
-              <button>Search 🔍</button>
-            </div>
-            <p>Or find by town</p>
-            <div className={styles.townButtons}>
-              {["Morecambe", "Durham", "Penrith", "Killingworth", "Brunswick", "Byker", "Morpeth", "Washington"].map((town) => (
-                <button key={town}>{town} ➔</button>
-              ))}
-            </div>
-          </header> */}
-
+      {/* Introductory section with company information and image */}
       <section className={styles.introSection}>
         <div>
+          {/* Description about the company with highlighted text */}
           <p>
             We're a <span className={styles.highlight}>family-run</span> North
             East self storage company that's rated{" "}
@@ -31,12 +21,15 @@ export function Ratings() {
           </p>
         </div>
 
+        {/* Image of the company team */}
         <div className={styles.introImage}>
           <img src={team} alt="Company team" />
         </div>
       </section>
 
+      {/* Section for displaying customer reviews */}
       <section className={styles.reviewsSection}>
+        {/* Individual review cards */}
         <div className={styles.reviewCard}>
           <h3>Susie ⭐⭐⭐⭐⭐</h3>
           <p>
@@ -63,6 +56,7 @@ export function Ratings() {
         </div>
       </section>
 
+      {/* Footer section with average rating and review link */}
       <footer className={styles.ratingSection}>
         <p>
           <strong>4.96</strong> average rating across <strong>167</strong>{" "}

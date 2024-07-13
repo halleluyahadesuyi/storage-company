@@ -1,7 +1,4 @@
 .locations {
-  /* padding: 20px 0; */
-  /* max-width: 800px; */
-  /* margin: 0 auto; */
   background: #faf8f5;
   color: #285581;
 }
@@ -32,13 +29,12 @@
 }
 
 .searchBar button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 15%;
   padding: 20px;
   font-size: 16px;
-  /* border: 1px solid #007bff; */
   border: none;
   background-color: #4176aa;
   color: white;
