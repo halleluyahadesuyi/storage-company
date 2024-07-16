@@ -1,5 +1,6 @@
 import styles from "../css/Ratings.module.css";
 import team from "../assets/imgs/team.png";
+import stars from "../assets/imgs/stars.png";
 
 // Define the Ratings component as a named export
 export function Ratings() {
@@ -31,7 +32,9 @@ export function Ratings() {
       <section className={styles.reviewsSection}>
         {/* Individual review cards */}
         <div className={styles.reviewCard}>
-          <h3>Susie ⭐⭐⭐⭐⭐</h3>
+          <h3>
+            Susie <img src={stars} alt="stars" className={styles.stars} />
+          </h3>
           <p>
             Friendly and helpful team and super easy service. Price was the best
             I could find and no set periods of use, which was exactly what we
@@ -39,7 +42,10 @@ export function Ratings() {
           </p>
         </div>
         <div className={styles.reviewCard}>
-          <h3>Chris Wandless ⭐⭐⭐⭐⭐</h3>
+          <h3>
+            Chris Wandless{" "}
+            <img src={stars} alt="stars" className={styles.stars} />
+          </h3>
           <p>
             All staff I have dealt with have been friendly and helpful. Staff
             both on site and on the telephone have been polite, courteous and
@@ -47,7 +53,10 @@ export function Ratings() {
           </p>
         </div>
         <div className={styles.reviewCard}>
-          <h3>Michael Goble ⭐⭐⭐⭐⭐</h3>
+          <h3>
+            Michael Goble{" "}
+            <img src={stars} alt="stars" className={styles.stars} />
+          </h3>
           <p>
             Thoroughly recommend this storage company, containers are excellent
             and value for money, easy access 24/7... and Sarah and Andrew were

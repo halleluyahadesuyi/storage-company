@@ -19,6 +19,7 @@
 .note {
   color: #285581;
   font-size: 24px;
+  font-weight: 200;
 }
 
 .introImage {
@@ -37,18 +38,22 @@
   justify-content: center;
   gap: 16px;
   margin-bottom: 40px;
-  padding: 62px 0 0 56px;
+  padding: 62px 0 0 0;
 }
 
 .reviewCard {
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 0 20px 20px;
+  border: 2px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
 }
 
 .ratingSection {
   font-size: 24px;
+}
+
+.stars {
+  margin-left: 12px;
 }
 
 .ratingSection a {
