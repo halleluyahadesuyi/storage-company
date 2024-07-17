@@ -1,0 +1,85 @@
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+    color: #285581;
+}
+
+.storage {
+    display: flex;
+    justify-content: center;
+    color: #285581;
+    padding: 69px 168px 64px 168px;
+}
+
+.houseStorage,
+.businessStorage {
+    border: 2px solid rgb(204, 204, 204, 0.4);
+    border-radius: 10px;
+    padding: 64px 84.5px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.houseStorage {
+    margin-right: 30px;
+}
+
+.houseStorage img,
+.businessStorage img {
+ margin-bottom: 48px;
+}
+
+.houseStorage {
+
+}
+
+.businessStorage {
+
+}
+
+.storagelink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    padding: 0 2px 0 12px;
+    transform: scaleX(1.4);
+}
+
+.guide {
+    background-color: #4176AA;
+    text-align: center;
+    position: relative;
+    margin: 0 168px 120px 168px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+
+}
+
+.guide h2 {
+    margin: 24px 0;
+    color: white;
+}
+
+.guide button {
+    display: inline-block;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #4176AA;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, 0.25);
+}
+
+.building {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}

@@ -35,17 +35,21 @@
 .reviewsSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 16px;
   margin-bottom: 40px;
   padding: 62px 0 0 0;
 }
 
 .reviewCard {
-  padding: 0 20px 20px;
-  border: 2px solid #ccc;
+  padding: 20px;
+  border: 2px solid rgb(204, 204, 204, 0.4);
   border-radius: 8px;
   background-color: #f9f9f9;
+}
+
+.reviewCard h3 {
+  text-align: left;
 }
 
 .ratingSection {
