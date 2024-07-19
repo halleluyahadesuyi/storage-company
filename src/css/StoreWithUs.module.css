@@ -1,0 +1,13 @@
+.gradientButton {
+    background: linear-gradient(45deg, #ffe0b2, #ffcc80);
+    padding: 1rem 1rem 1rem 1.5rem; /* 16px 16px 16px 24px */
+    display: flex;
+    align-items: center;
+    border-radius: 0.625rem; /* 10px */
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem; /* 24px */
+    color: #285581;
+    font-family: "Inter", sans-serif;
+    margin-left: 4.375rem; /* 70px */
+  }
