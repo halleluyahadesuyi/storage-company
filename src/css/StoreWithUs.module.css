@@ -1,3 +1,8 @@
+.store {
+    padding: 80px 70px;
+    color: #285581;
+}
+
 .gradientButton {
     background: linear-gradient(45deg, #ffe0b2, #ffcc80);
     padding: 1rem 1rem 1rem 1.5rem; /* 16px 16px 16px 24px */

@@ -1,5 +1,4 @@
 import { FaArrowRight } from "react-icons/fa";
-import styles from "../css/StoreWithUs.module.css";
 import safe from "../assets/imgs/safe.png";
 import easy from "../assets/imgs/easy.png";
 import affordable from "../assets/imgs/affordable.png";
@@ -8,10 +7,11 @@ import plusmark from "../assets/imgs/plusmark.png";
 import reviewsSnapshot from "../assets/imgs/reviewsSnapshot.png";
 import customerLead from "../assets/imgs/customerLead.png";
 import stars from "../assets/imgs/stars.png";
+import styles from "../css/StoreWithUs.module.css";
 
 export function StoreWithUs() {
   return (
-    <>
+    <section className={styles.store}>
       <h3>Why store with us?</h3>
       <section className={styles.qualities}>
         <h2>We're safe, easy & affordable</h2>
@@ -78,9 +78,8 @@ export function StoreWithUs() {
 
         <img src={stars} alt="stars" />
         <p>4.96 average rating across 167 reviews</p>
-        <p>4.96 average rating across 167 reviews</p>
         <a href="/">See all reviews</a>
       </section>
-    </>
+    </section>
   );
 }
