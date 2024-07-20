@@ -2,14 +2,14 @@
   border: none;
   height: 2px;
   background-color: #e0e0e0;
-  opacity: 0.5;
+  opacity: 0.7;
   margin: 0;
 }
 
 .storageSelection {
   background: #faf8f5;
   color: #285581;
-  padding: 69px 168px 64px 168px;
+  padding: 0 168px 64px 168px;
 }
 
 h2 {
