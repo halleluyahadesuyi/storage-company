@@ -36,16 +36,13 @@ export function StoreWithUs() {
                   <img src={checkmark} alt="checkmark" /> 24 hour CCTV storage
                 </li>
                 <li>
-                  <img src={checkmark} alt="checkmark" /> 10ft steel perimeter
-                  ring-fencing
+                  <img src={checkmark} alt="checkmark" /> 10ft steel perimeter ring-fencing
                 </li>
                 <li>
-                  <img src={checkmark} alt="checkmark" /> Heavy duty industrial
-                  locks
+                  <img src={checkmark} alt="checkmark" /> Heavy duty industrial locks
                 </li>
                 <li>
-                  <img src={checkmark} alt="checkmark" /> Electronic gates
-                  control access
+                  <img src={checkmark} alt="checkmark" /> Electronic gates control access
                 </li>
               </ul>
             </div>
@@ -111,6 +108,8 @@ export function StoreWithUs() {
           <img src={stars} alt="stars" className={styles.stars} />
           <p>4.96 average rating across 167 reviews</p>
           <a href="/">See all reviews</a>
+
+          <img src={reviewsSnapshot} alt="review snapshot" className={styles.reviewsSnapshot} />
         </section>
       </section>
     </>
