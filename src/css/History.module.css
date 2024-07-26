@@ -51,11 +51,6 @@
   border-radius: 5px;
 }
 
-.stats h3,
-.stats h4 {
-  /* margin: 0; */
-}
-
 .stats h3 {
   text-align: left;
   font-weight: bold;
