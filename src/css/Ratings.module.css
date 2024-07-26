@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* justify-content: center; */
-  gap: 16px;
+  gap: 30px;
   margin-bottom: 40px;
   padding: 62px 0 0 0;
 }
@@ -50,6 +50,13 @@
 
 .reviewCard h3 {
   text-align: left;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.reviewCard p {
+  line-height: 1.5;
 }
 
 .ratingSection {
@@ -58,6 +65,7 @@
 
 .stars {
   margin-left: 12px;
+  width: 120px;
 }
 
 .ratingSection a {

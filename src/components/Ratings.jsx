@@ -6,7 +6,7 @@ import stars from "../assets/imgs/stars.png";
 export function Ratings() {
   // Render the component
   return (
-    <div className={styles.ratings}>
+    <section className={styles.ratings}>
       {/* Introductory section with company information and image */}
       <section className={styles.introSection}>
         <div>
@@ -66,12 +66,12 @@ export function Ratings() {
       </section>
 
       {/* Footer section with average rating and review link */}
-      <footer className={styles.ratingSection}>
+      <div className={styles.ratingSection}>
         <p>
           <strong>4.96</strong> average rating across <strong>167</strong>{" "}
           reviews <a href="/">See all reviews</a>
         </p>
-      </footer>
-    </div>
+      </div>
+    </section>
   );
 }
