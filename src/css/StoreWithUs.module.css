@@ -51,6 +51,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* width: 100%; */
 }
 
 .description ul {
@@ -67,6 +68,20 @@ h2 {
 
 .description ul li > img {
   margin-right: 1rem; /* 16px */
+}
+
+.safe,
+.easy,
+.affordable {
+  background-color: red;
+  width: 25%;
+}
+
+.safe .storeImgs,
+.easy .storeImgs,
+.affordable .storeImgs {
+background-color: aqua;
+width: 100%;
 }
 
 .safe,
@@ -153,8 +168,18 @@ h2 {
     font-size: 0.875rem; /* 14px */
   }
 
+  .description {
+    /* display: block; */
+  }
+
   .description ul li {
     margin-top: 0.875rem; /* 14px */
+  }
+
+  .safe,
+  .easy,
+  .affordable {
+    width: 100%;
   }
 
   .safe,

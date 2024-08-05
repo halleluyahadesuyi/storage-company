@@ -27,7 +27,7 @@ export function StoreWithUs() {
 
         <section className={styles.description}>
           <section className={styles.safe}>
-            <img src={safe} alt="safe" />
+            <img src={safe} alt="safe" className={styles.storeImgs} />
             <div>
               <h3>Safe</h3>
               <hr className={styles.faintLine} />
@@ -49,7 +49,7 @@ export function StoreWithUs() {
           </section>
 
           <section className={styles.easy}>
-            <img src={easy} alt="easy" />
+            <img src={easy} alt="easy" className={styles.storeImgs} />
             <div>
               <h3>Easy</h3>
               <hr className={styles.faintLine} />
@@ -71,7 +71,7 @@ export function StoreWithUs() {
           </section>
 
           <section className={styles.affordable}>
-            <img src={affordable} alt="affordable" />
+            <img src={affordable} alt="affordable" className={styles.storeImgs} />
             <div>
               <h3>Affordable</h3>
               <hr className={styles.faintLine} />
