@@ -20,7 +20,7 @@ export function StoreWithUs() {
           <button className={styles.gradientButton}>
             Get a quote
             <FaArrowRight
-              style={{ padding: "0 2px 0 12px", transform: "scaleX(1.4)" }}
+              style={{ padding: "0 0.125rem 0 0.75rem", transform: "scaleX(1.4)" }}
             />
           </button>
         </section>

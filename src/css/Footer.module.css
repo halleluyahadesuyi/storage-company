@@ -1,6 +1,17 @@
+/* Base Styles */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .faintLine {
   border: none;
-  height: 2px;
+  height: 0.125rem; /* 2px */
   background-color: #e0e0e0;
   opacity: 0.7;
   margin: 0;
@@ -8,21 +19,22 @@
 
 .footer {
   display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
   justify-content: space-between;
   align-items: start;
   position: relative;
-  padding: 51px 179px 59px 70px;
+  padding: 3.1875rem 11.1875rem 3.6875rem 4.375rem; /* 51px 179px 59px 70px */
   color: #285581;
 }
 
 .footer ul {
   padding: 0;
-  margin-right: 10px;
+  margin-right: 0.625rem; /* 10px */
 }
 
 .footer ul li {
   list-style-type: none;
-  margin-bottom: 16px;
+  margin-bottom: 1rem; /* 16px */
 }
 
 .footer ul li a {
@@ -34,19 +46,71 @@ h5 {
 }
 
 .stars {
-  width: 110px;
+  width: 6.875rem; /* 110px */
 }
 
 .truck {
   position: absolute;
-  left: 70px;
+  left: 4.375rem; /* 70px */
   bottom: 0;
 }
 
 .end {
   display: flex;
-  padding: 18px 70px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  padding: 1.125rem 4.375rem; /* 18px 70px */
   background: #2a4d6f;
   color: white;
   justify-content: space-between;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* 87.5% of 16px */
+  }
+
+  .footer {
+    padding: 2.5rem 3.5rem 3rem; /* 40px 56px 48px */
+  }
+
+  .truck {
+    width: 8rem; /* Adjust the size for better fit on tablet */
+    left: 3.5rem; /* 56px */
+  }
+
+  .end {
+    padding: 1rem 3.5rem; /* 16px 56px */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* 75% of 16px */
+  }
+
+  .footer {
+    padding: 2rem 1.5rem; /* 32px 24px */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
+
+  .footer section {
+    margin-bottom: 1.5rem; /* Add spacing between sections */
+  }
+
+  .truck {
+    width: 6rem; /* Adjust the size for better fit on mobile */
+    left: 50%;
+    transform: translateX(-50%); /* Center the truck */
+  }
+
+  .end {
+    padding: 1rem 1.5rem; /* 16px 24px */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
 }

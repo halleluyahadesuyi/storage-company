@@ -1,16 +1,15 @@
 .history {
   background: linear-gradient(45deg, #4680b9, #386694);
-  margin: 80px 67px;
-  padding: 80px 40px;
-  border-radius: 10px;
+  margin: 5rem 4.1875rem; /* 80px 67px */
+  padding: 5rem 2.5rem; /* 80px 40px */
+  border-radius: 0.625rem; /* 10px */
   color: white;
   position: relative;
 }
 
 .history h3 {
   font-weight: bold;
-  margin: 0;
-  margin-bottom: 21.67px;
+  margin: 0 0 1.354375rem 0; /* 0 0 21.67px 0 */
 }
 
 .history p {
@@ -23,42 +22,91 @@
 .authority {
   display: flex;
   align-items: center;
-  margin: 19px 0 40px 0;
+  margin: 1.1875rem 0 2.5rem 0; /* 19px 0 40px 0 */
 }
 
 .authority .nhs {
-  margin-right: 29px;
+  margin-right: 1.8125rem; /* 29px */
 }
 
 .history .map {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  right: 40px;
+  right: 2.5rem; /* 40px */
+  height: 100%; /* Ensure the map image scales with its container */
 }
 
 .stats {
   display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .statsItem {
   background: rgba(255, 255, 255, 0.1);
-  margin-right: 24px;
-  padding: 16px;
-  width: 263px;
-  height: 96px;
-  border-radius: 5px;
+  margin-right: 1.5rem; /* 24px */
+  padding: 1rem; /* 16px */
+  width: 16.4375rem; /* 263px */
+  height: 6rem; /* 96px */
+  border-radius: 0.3125rem; /* 5px */
+  margin-bottom: 1.5rem; /* Add bottom margin for wrap spacing */
 }
 
 .stats h3 {
   text-align: left;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2rem; /* 32px */
 }
 
 .stats h4 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   opacity: 0.6;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* 87.5% of 16px */
+  }
+
+  .history {
+    margin: 4rem 2rem; /* 64px 32px */
+    padding: 4rem 2rem; /* 64px 32px */
+  }
+
+  .history p {
+    width: 50%;
+  }
+
+  .history .map {
+    right: 2rem; /* 32px */
+  }
+
+  .statsItem {
+    width: 14rem; /* Adjust width for better fit on tablet */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* 75% of 16px */
+  }
+
+  .history {
+    margin: 2rem 1rem; /* 32px 16px */
+    padding: 3rem 1rem; /* 48px 16px */
+  }
+
+  .history p {
+    width: 100%;
+  }
+
+  .history .map {
+    display: none; /* Hide the map on mobile for simplicity */
+  }
+
+  .statsItem {
+    width: 100%; /* Full width on mobile */
+  }
 }

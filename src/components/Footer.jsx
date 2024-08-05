@@ -14,7 +14,7 @@ export function Footer() {
           <h5>Locations</h5>
           <ul>
             <li><a href="#">Storage Brunswick</a></li>
-            <li><a href="#">Storage Byker</a></li>
+            <li><a hr                                                ef="#">Storage Byker</a></li>
             <li><a href="#">Storage Durham</a></li>
             <li><a href="#">Storage Killingworth</a></li>
             <li><a href="#">Storage Morpheth</a></li>
