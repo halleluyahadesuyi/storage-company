@@ -101,7 +101,7 @@
 /* Mobile Styles */
 @media (max-width: 480px) {
   .searchSection {
-    width: 100%;
+    /* width: 100%; */
     padding: 1.25rem; /* 20px */
   }
 

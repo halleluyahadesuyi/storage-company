@@ -1,3 +1,4 @@
+/* Base Styles */
 .faintLine {
   border: none;
   height: 2px;
@@ -9,43 +10,44 @@
 .storageSelection {
   background: #faf8f5;
   color: #285581;
-  padding: 80px 168px 64px 168px;
+  padding: 5rem 10.5rem 4rem 10.5rem; /* 80px 168px 64px 168px */
 }
 
 h2 {
   text-align: center;
   margin: 0;
-  padding-top: 80px;
-  font-size: 40px;
+  padding-top: 5rem; /* 80px */
+  font-size: 2.5rem; /* 40px */
 }
 
 .storage {
   display: flex;
   justify-content: center;
-  padding: 69px 0;
+  padding: 4.3125rem 0; /* 69px */
+  background-color: red;
 }
 
 .houseStorage,
 .businessStorage {
-  border: 2px solid rgb(204, 204, 204, 0.4);
-  border-radius: 10px;
-  padding: 64px 84.5px;
-  font-size: 24px;
+  border: 0.125rem solid rgba(204, 204, 204, 0.4); /* 2px */
+  border-radius: 0.625rem; /* 10px */
+  padding: 4rem 5.28125rem; /* 64px 84.5px */
+  font-size: 1.5rem; /* 24px */
   font-weight: bold;
   text-align: center;
   background: white;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .houseStorage {
-  margin-right: 30px;
+  margin-right: 1.875rem; /* 30px */
 }
 
 .houseStorage img,
 .businessStorage img {
-  margin-bottom: 48px;
-  width: 288px;
-  height: 240px;
+  margin-bottom: 3rem; /* 48px */
+  max-width: 100%;
+  height: auto;
 }
 
 .storageLink {
@@ -55,7 +57,7 @@ h2 {
 }
 
 .arrow {
-  padding: 0 2px 0 12px;
+  padding: 0 0.125rem 0 0.75rem; /* 0 2px 0 12px */
   transform: scaleX(1.4);
 }
 
@@ -63,35 +65,106 @@ h2 {
   background-color: #4176aa;
   text-align: center;
   position: relative;
-  /* margin: 0 168px 120px 168px; */
-  margin-bottom: 120px;
-  border-radius: 10px;
-  padding-bottom: 40px;
+  margin-bottom: 7.5rem; /* 120px */
+  border-radius: 0.625rem; /* 10px */
+  padding-bottom: 2.5rem; /* 40px */
 }
 
 .guide p {
-  margin: 24px 0;
+  margin: 1.5rem 0; /* 24px 0 */
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   font-weight: bold;
 }
 
 .guide button {
   display: inline-block;
-  /* justify-content: center;
-    align-items: center; */
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem; /* 8px 12px */
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 0.3125rem; /* 5px */
+  font-size: 1rem; /* 16px */
   font-weight: bold;
   background: #4176aa;
   color: white;
-  border: 2px solid rgb(255, 255, 255, 0.25);
+  border: 0.125rem solid rgba(255, 255, 255, 0.25); /* 2px */
 }
 
 .building {
   position: absolute;
   bottom: 0;
-  right: 40px;
+  right: 2.5rem; /* 40px */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .storageSelection {
+    padding: 2.5rem 3.75rem 2rem 3.75rem; /* 40px 60px 32px 60px */
+  }
+
+  h2 {
+    padding-top: 2.5rem; /* 40px */
+    font-size: 2rem; /* 32px */
+  }
+
+  .storage {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0; /* 32px */
+  }
+
+  .houseStorage,
+  .businessStorage {
+    padding: 2rem; /* 32px */
+    margin-bottom: 1.5rem; /* 24px */
+  }
+
+  .houseStorage {
+    margin-right: 0;
+  }
+
+  .guide {
+    margin-bottom: 4rem; /* 64px */
+  }
+
+  .guide p {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .building {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .storageSelection {
+    padding: 1.5rem 1rem 2.5rem 1rem; /* 24px 16px 40px 16px */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .storage {
+    padding: 1rem 0; /* 16px */
+  }
+
+  .houseStorage,
+  .businessStorage {
+    padding: 1rem; /* 16px */
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .guide p {
+    font-size: 1rem; /* 16px */
+  }
+
+  .guide button {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .building {
+    /* right: 1.25rem; 20px */
+  }
 }

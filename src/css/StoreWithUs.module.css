@@ -145,6 +145,14 @@ width: 100%;
   position: absolute;
   top: 0;
   right: 0;
+  /* background-color: red; */
+}
+
+/* Hide snapshot at this screen size */
+@media (max-width: 1210px) {
+  .reviewsSnapshot {
+    display: none;
+  }
 }
 
 /* Tablet Styles */
@@ -203,11 +211,6 @@ width: 100%;
 
   .stars + p {
     font-size: 0.875rem; /* 14px */
-  }
-
-  .reviewsSnapshot {
-    display: none;
-    background-color: red;
   }
 }
 
