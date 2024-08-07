@@ -31,7 +31,7 @@ export function Locations() {
               src={search}
               alt="search icon"
               className={styles.searchLens}
-              style={{ marginLeft: "12px", width: "16px", height: "16px" }}
+              style={{ marginLeft: "0.75rem", width: "1rem", height: "1rem" }}
             />
           </button>
         </div>

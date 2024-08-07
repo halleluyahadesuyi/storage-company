@@ -1,6 +1,8 @@
+/* Base Styles */
 .locations {
   background: #faf8f5;
   color: #285581;
+  padding: 1.25rem 0; /* 20px 0 */
 }
 
 .searchSection {
@@ -8,23 +10,29 @@
   width: 90%;
   background: white;
   margin: 0 auto;
-  border-radius: 10px;
-  padding: 24px;
+  border-radius: 0.625rem; /* 10px */
+  padding: 1.5rem; /* 24px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+}
+
+.searchSection h1 {
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 .searchBar {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 .searchBar input {
-  padding: 10px;
-  margin-right: 16px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 85%;
+  padding: 0.625em; /* 10px */
+  margin-right: 1em; /* 16px */
+  font-size: 1em; /* 16px */
+  border: 0.0625em solid #ccc; /* 1px */
+  border-radius: 0.3125em; /* 5px */
+  width: 70%;
   background: #f4f6f9;
 }
 
@@ -32,33 +40,90 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
-  padding: 20px;
-  font-size: 16px;
+  padding: 0.625em 1.25em; /* 10px 20px */
+  font-size: 1em; /* 16px */
   border: none;
   background-color: #4176aa;
   color: white;
-  border-radius: 5px;
+  border-radius: 0.3125em; /* 5px */
   cursor: pointer;
 }
 
 .searchBar .searchLens {
   transform: scaleX(-1);
+  margin-left: 0.75em; /* 12px */
+  width: 1em; /* 16px */
+  height: 1em; /* 16px */
+}
+
+.searchSection p {
+  margin: 1.25em 0; /* 20px 0 */
 }
 
 .townButtons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em; /* 16px */
   justify-content: center;
-  gap: 16px;
-  padding: 10px 0;
+  padding: 0.625em 0; /* 10px 0 */
 }
 
 .townButtons button {
-  padding: 10px 20px;
-  border: 1px solid #007bff;
+  padding: 0.625em 1.25em; /* 10px 20px */
+  border: 0.0625em solid #007bff; /* 1px */
   background-color: white;
   color: #007bff;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0.25em; /* 4px */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.townButtons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .searchBar input {
+    width: 60%;
+  }
+
+  .searchBar button {
+    width: auto;
+  }
+
+  .townButtons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .searchSection {
+    width: 100%;
+    padding: 1.25rem; /* 20px */
+  }
+
+  .searchBar {
+    flex-direction: column;
+  }
+
+  .searchBar input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.625em; /* 10px */
+  }
+
+  .searchBar button {
+    width: 100%;
+  }
+
+  .townButtons {
+    grid-template-columns: 1fr;
+  }
+
+  .townButtons button {
+    width: 100%;
+  }
 }
