@@ -9,29 +9,37 @@
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+  background-color: #285581;
+  color: #f2f2f2;
 }
 
 .navbar .logo {
   width: 7.75rem; /* 124px */
   height: 2rem; /* 32px */
+  margin-right: 1.5rem; /* 24px */
 }
 
 .navbar .linksButtons {
   display: flex;
+  align-items: center;
 }
 
-.navbar li {
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.navbar li a {
-  margin-right: 1.5rem; /* 24px */
-  padding: 0.625rem 0; /* 10px 0 */
+.navbar li {
+  /* margin-right: 1.5rem; 24px */
 }
 
-.navbar a {
+.navbar li a {
   color: #f2f2f2;
   text-decoration: none;
+  padding: 0.625rem 0; /* 10px 0 */
+  margin-right: 1.5rem; /* 24px */
 }
 
 .navbar a:hover {
@@ -47,7 +55,7 @@
   padding: 0.5em 0.75em; /* 8px 12px */
   display: flex;
   align-items: center;
-  border-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 0.625rem; /* 10px */
   font-weight: 700;
   font-size: 1rem; /* 16px */
@@ -65,3 +73,71 @@
   display: none;
 }
 
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem 2rem; /* 24px 32px */
+  }
+
+  .navbar .linksButtons {
+    display: none; /* Hide links and buttons initially */
+    flex-direction: column; /* Stack links and buttons vertically */
+    width: 100%;
+    background-color: #285581;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+  }
+
+  .navbar li {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 1rem; /* Add bottom margin */
+  }
+
+  .navbar button {
+    width: 100%; /* Full width buttons */
+    justify-content: center;
+  }
+
+  .navbar .icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem; /* 24px */
+    color: #fff;
+  }
+
+  .navbar .icon.active + .linksButtons {
+    display: flex; /* Show links and buttons when icon is active */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem; /* 16px */
+  }
+
+  .navbar .logo {
+    width: 6.25rem; /* 100px */
+    height: auto;
+  }
+
+  .navbar ul {
+    padding: 0.5rem 0; /* 8px 0 */
+  }
+
+  .navbar li a {
+    padding: 0.5rem 0; /* 8px 0 */
+  }
+
+  .navbar button {
+    padding: 0.75em 1em; /* 12px 16px */
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .navbar .icon {
+    font-size: 2rem; /* 32px */
+  }
+}

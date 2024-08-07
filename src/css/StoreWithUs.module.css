@@ -207,6 +207,7 @@ width: 100%;
 
   .reviewsSnapshot {
     display: none;
+    background-color: red;
   }
 }
 
