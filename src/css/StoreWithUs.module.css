@@ -73,15 +73,13 @@ h2 {
 .safe,
 .easy,
 .affordable {
-  background-color: red;
   width: 25%;
 }
 
 .safe .storeImgs,
 .easy .storeImgs,
 .affordable .storeImgs {
-background-color: aqua;
-width: 100%;
+  width: 100%;
 }
 
 .safe,

@@ -24,7 +24,6 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 4.3125rem 0; /* 69px */
-  background-color: red;
 }
 
 .houseStorage,
