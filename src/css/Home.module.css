@@ -4,7 +4,7 @@ html {
 }
 
 .gradientBackground {
-  position: relative;
+  position: relative; 
   width: auto;
   height: 45rem; /* 720px */
   background: linear-gradient(45deg, #4680b9, #386694);
